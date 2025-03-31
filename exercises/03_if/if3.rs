@@ -1,13 +1,17 @@
 fn animal_habitat(animal: &str) -> &str {
     // TODO: Fix the compiler error in the statement below.
+    // Solution: In Rust, if is an expression that produces a value. 
+    // That means each branch must evaluate to a value rather than end 
+    // in a statement. Specifically, remove the semicolons so that the 
+    // if arms return 1, 2, 3, or -1 properly. 
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        -1
     };
 
     // Don't change the expression below!
