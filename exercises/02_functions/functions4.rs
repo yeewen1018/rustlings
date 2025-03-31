@@ -8,10 +8,11 @@ fn is_even(num: i64) -> bool {
 }
 
 // TODO: Fix the function signature.
-fn sale_price(price: i64) -> {
-    if is_even(price) {
+//Solution: the return type must always be annotated. 
+fn sale_price(price: i64) -> i64{
+    if is_even(price){
         price - 10
-    } else {
+    } else{
         price - 3
     }
 }
